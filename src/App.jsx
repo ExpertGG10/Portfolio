@@ -38,8 +38,6 @@ function App() {
       {/* Projetos */}
       <section id="projetos" className="py-16">
         <div className="w-full max-w-7xl mx-auto px-6">
-          <h3 className="text-3xl font-bold text-center mb-4 text-blue-900">Aplicativos e Automações</h3>
-          <p className="text-center text-gray-600 mb-10">Seleção de aplicativos e automações</p>
 
           {/* Aplicativos */}
           <div className="mb-12">
