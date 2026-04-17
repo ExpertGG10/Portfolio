@@ -9,10 +9,11 @@ interface CardProps {
   description: string
   tags: string[]
   detailsHref?: string
+  siteHref?: string
   isComingSoon?: boolean
 }
 
-export default function Card({ image, title, type, description, tags, detailsHref, isComingSoon }: CardProps) {
+export default function Card({ image, title, type, description, tags, detailsHref, siteHref, isComingSoon }: CardProps) {
   return (
     <article className="h-full overflow-hidden rounded-lg border-t-4 border-t-blue-800 bg-white shadow-md transition-all hover:shadow-xl">
       {/* Imagem */}
@@ -51,6 +52,15 @@ export default function Card({ image, title, type, description, tags, detailsHre
           >
             Em Breve
           </button>
+        ) : siteHref ? (
+          <a
+            href={siteHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-auto block w-full rounded-lg bg-blue-800 py-2 text-center font-semibold text-white transition-colors hover:bg-blue-900"
+          >
+            Acessar o site
+          </a>
         ) : detailsHref ? (
           <Link
             to={detailsHref}
