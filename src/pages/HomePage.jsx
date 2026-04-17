@@ -22,7 +22,7 @@ export default function HomePage() {
                 type="Aplicativo"
                 description="Envio em massa de mensagens via Gmail e WhatsApp"
                 tags={['Whatsapp', 'Gmail']}
-                detailsHref="/aenvio"
+                siteHref="https://enviador-eight.vercel.app/"
               />
               <Card
                 title="Conferência de Substituição Tributária"
