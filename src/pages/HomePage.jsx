@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../components/Card'
 import enviador from '../assets/enviador_preview.png'
+import calculadoraReformaPreview from '../assets/calculadora_preview.png'
 import planilhaCodigoPlanilha from '../assets/planilha-codigo-planilha.png'
 import planilhaCodigoPastaPdf from '../assets/planilha-codigo-pasta_pdf.png'
 import planilhaCodigo from '../assets/planilha-codigo.png'
@@ -25,19 +26,19 @@ export default function HomePage() {
                 siteHref="https://enviador-eight.vercel.app/"
               />
               <Card
+                image={calculadoraReformaPreview}
+                title="Calculadora Reforma Tributária"
+                type="Aplicativo"
+                description="Calculadora para simular o impacto da reforma tributária sobre o faturamento e a carga total"
+                tags={[]}
+                siteHref="https://calculadora-reforma-jaral.vercel.app/"
+              />
+              <Card
                 title="Conferência de Substituição Tributária"
                 type="Aplicativo"
                 description="Site para a conferência de substituição tributária por planilha de NCMs"
                 tags={['Econet']}
                 detailsHref="/conferencia-substituicao-tributaria"
-                isComingSoon
-              />
-              <Card
-                title="Dashboard Whatsapp Business"
-                type="Aplicativo"
-                description="Dashboard para gerenciar mensagens e requisições chegando pelo WhatsApp Business, além de monitorar métricas e desempenho"
-                tags={['Whatsapp']}
-                detailsHref="/dashboard-whatsapp-business"
                 isComingSoon
               />
             </div>

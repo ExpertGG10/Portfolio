@@ -35,13 +35,15 @@ export default function Card({ image, title, type, description, tags, detailsHre
         <p className="text-gray-600 text-sm mb-4">{description}</p>
 
         {/* Tags */}
-        <div className="mb-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <span key={tag} className="bg-blue-100 text-blue-900 text-xs px-2 py-1 rounded font-medium">
-              {tag}
-            </span>
-          ))}
-        </div>
+        {tags.length > 0 ? (
+          <div className="mb-4 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <span key={tag} className="bg-blue-100 text-blue-900 text-xs px-2 py-1 rounded font-medium">
+                {tag}
+              </span>
+            ))}
+          </div>
+        ) : null}
 
         {/* Botão */}
         {isComingSoon ? (
